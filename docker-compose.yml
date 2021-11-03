@@ -13,6 +13,8 @@ services:
             - MYSQL_DATABASE=college
 
     college-management-system:
+        # in case you wont to run the project from docker hub uncomment the next line and commet the next two lines
+        # image: krishnadockeraccount/college-management-system:latest
         build:
             context: .
         ports:
